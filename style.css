@@ -5,17 +5,89 @@
 }
 
 :root {
+  --page-background-color: gold;
 }
 
 html {
   font-family: monospace;
   direction: ltr;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 body {
   margin: 0;
   height: 100vh;
-  background-color: var(--page-background-color);
   color: var(--page-text-color);
+}
+
+/*......................................................................................... header styles ......*/
+
+header {
+  height: 15%;
+  padding: 0;
+  background-color: var(--page-background-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.headingExplanation {
+  padding: 0.75rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+.headingParagraph {
+  margin: 0;
+  margin-top: 0.25rem;
+}
+
+.headingButton {
+  height: 100%;
+  width: 7%;
+  padding-top: 1.75rem;
+  margin-right: 0.4rem;
+}
+
+.theButton {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  font-size: 1.15rem;
+  font-weight: 100;
+  border-width: 0.1rem;
+  padding-block: 0.25rem;
+  padding-inline: 0.5rem;
+  box-shadow: 2.5px 2.5px white;
+}
+
+/*.................................................................................. main styles ............*/
+
+main {
+  height: 85%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theWholeBackground {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.theSingleBackground {
+  width: 1%;
+  height: 100%;
+}
+
+.countBackgroundColor {
+  background-color: var(--page-background-color);
+}
+
+.numericalCounter {
+  font-size: 5rem;
+  position: absolute;
 }
