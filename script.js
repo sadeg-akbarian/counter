@@ -3,7 +3,7 @@ function counterCallback() {
   const countBlocks = document.querySelectorAll(".theSingleBackground");
   counter.innerText++;
   let forNumber = parseInt(counter.innerText);
-  if (forNumber > 100) {
+  if (counter.innerText.length >= 3 && forNumber % 100 !== 0) {
     for (let i = 0; i < countBlocks.length; i++) {
       const countBlock = countBlocks[i];
       countBlock.classList.remove("countBackgroundColor");
