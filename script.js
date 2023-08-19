@@ -24,11 +24,8 @@ const windowArea = document.body;
 
 countArea.addEventListener("click", counterCallback);
 windowArea.addEventListener("keydown", function (event) {
-  console.log(event.key);
-  // Alle Tasten werden erkannt, nur bei der Leertaste wird eine leere Zeile ausgeloggt!
-  if (event.key === "Enter" || event.key === "Space") {
+  if (event.key === "Enter" || event.key === " ") {
     counterCallback();
-    console.log("XYZ");
   }
 });
 
